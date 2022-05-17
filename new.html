@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="new.css" type="text/css" media="all" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jump Jump</h1>
+    <div id="game">
+        
+        <div id="character"></div>
+        <div id="box"></div>
+    </div>
+    <button type="submit"></button>
+<script type="text/javascript" charset="utf-8">
+    var character = document.getElementById("character");
+var box = document.getElementById("box");
+function jump(){
+  
+      character.classList.add("animation");
+  
+    setTimeout(function() {
+        character.classList.remove("animation")
+    }, 500);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    height: 250px;
+    width: 350px;
+    display: box;
+    border-style: solid;
+}
+#character{
+    height: 40px;
+    width: 20px;
+    background-color: #00C2FF;
+    border-radius: 6px;
+    position: relative;
+    top: 210px;
+    left: 10;
+    
+}
+.animation{
+    animation: 0.5s jump linear ;
+}
+#box{
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: #FF000F;
+    position: relative;
+    top: 190px;
+    left: 330px;
+    animation: 1s box linear infinite;
+}
+@keyframes box{
+    0%{
+        top: 190px;
+        left: 330px;
+    }
+    100%{
+        top: 190px;
+        left: -30px;
+    }
+}
+@keyframes jump{
+    0%{
+        top: 210px;
+    }
+    50%{
+        top: 130px;
+    }
+    100%{
+        top: 210px;
+    }
+}
